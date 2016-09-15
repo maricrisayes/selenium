@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 3, Time elapsed: 6.389 sec <<< FAILURE! - in TestSuite
+setUp(com.example.tests.WebTestFile)  Time elapsed: 5.696 sec  <<< FAILURE!
+org.openqa.selenium.remote.UnreachableBrowserException: 
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'PACD-516P19N-D', ip: '169.254.70.110', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
+Driver info: driver.version: RemoteWebDriver
+	at com.example.tests.WebTestFile.setUp(WebTestFile.java:34)
+Caused by: java.net.UnknownHostException: selenium-hub
+	at com.example.tests.WebTestFile.setUp(WebTestFile.java:34)
+
+tearDown(com.example.tests.WebTestFile)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.example.tests.WebTestFile.tearDown(WebTestFile.java:79)
+
